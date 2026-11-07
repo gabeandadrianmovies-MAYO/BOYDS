@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BOYDS is an independent community guide to Boyds, Maryland: local places, history, community resources, events, and news.">
+  <title>Suggest Something | Boyds, Maryland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    An independent community guide to Boyds, Maryland
+    <a href="about.html.html">Learn about BOYDS <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BOYDS home">
+      <span class="brand-mark">B<span>.</span></span>
+      <span class="brand-word">BOYDS<small>MARYLAND · COMMUNITY GUIDE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">☰</button>
+       <nav id="primaryNav" class="primary-nav" aria-label="Main navigation">
+      <a href="explore.html.html">Explore</a>
+      <a href="history.html.html">History</a>
+      <a href="what-to-know.html.html">What To Know</a>
+      <a href="about.html.html">About</a>
+      <a href="home.html.html">Home</a>
+ </nav>
+    <a class="header-cta" href="suggest.html.html">Share something <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+<!-- ===================================
+     SUGGEST SOMETHING
+=================================== -->
+<section class="upgrade-section suggestion-section" id="suggest">
+  <div class="section-heading">
+    <span class="eyebrow">YOUR COMMUNITY, YOUR IDEAS</span>
+    <h2>Suggest Something</h2>
+    <p>Help make BOYDS more useful by suggesting a place, event, or improvement.</p>
+  </div>
+
+  <form id="suggestionForm" class="suggestion-form">
+    <label for="suggestionType">What would you like to suggest?</label>
+    <select id="suggestionType" name="type" required>
+      <option value="">Choose a category</option>
+      <option value="Place">A place to visit</option>
+      <option value="Business">A local business</option>
+      <option value="Event">An event</option>
+      <option value="History">A history fact or story</option>
+      <option value="Website idea">A website improvement</option>
+      <option value="Other">Something else</option>
+    </select>
+
+    <label for="suggestionTitle">Short title</label>
+    <input
+      id="suggestionTitle"
+      name="title"
+      type="text"
+      maxlength="80"
+      placeholder="e.g. Add a local walking trail"
+      required>
+
+    <label for="suggestionDetails">Tell us about your idea</label>
+    <textarea
+      id="suggestionDetails"
+      name="details"
+      rows="5"
+      maxlength="1000"
+      placeholder="Share details or a link to an official website..."
+      required></textarea>
+
+    <p class="form-privacy">
+      Please don't include private information, home addresses, or sensitive
+      personal details.
+    </p>
+
+    <button type="submit" class="green-button">
+      Prepare Suggestion Email ↗
+    </button>
+
+    <p id="suggestionStatus" class="suggestion-status" aria-live="polite"></p>
+  </form>
+</section><footer class="boyds-footer"> <h2>BOYDS</h2> <p>A little guide to a special corner of Maryland.</p> </footer> </section>
+ 
+
+ </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">B<span>.</span></span><span class="brand-word">BOYDS<small>MARYLAND · COMMUNITY GUIDE</small></span></a><p>A small town. A shared story.</p><a href="#suggest" class="back-top">Back to top ↑</a></div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> BOYDS — Independent community project</span><span>Not an official government website.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
